@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Exe2Apk App</title>
+        <link rel="icon" type="image/x-icon" href="img/logo-eta.png" />
+        <!-- Bootstrap icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a href="index.html" class="navbar-brand"><img src="img/logo-eta.png" alt="" width="50" height="50"></a>
+                <a class="navbar-brand fw-bold" href="#page-top">Exe2Apk</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="./index.html#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="./index.html#pricing">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="./index.html">Download</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="instructions.html">Instructions</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="faq.html">FAQ</a></li>
+                    </ul>
+                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me-2"></i>
+                            <span class="small">Send Feedback</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Instructions section-->
+        <section class="bg-gradient-primary-to-secondary" id="instructions" style="margin-top: 85px;">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-12">
+                        <h2 class="display-4 lh-1 text-white font-alt">Instructions</h2>
+                        <h3 class="text-white mb-5 font-alt">Porting Windows 32-bit applications to Android using MIT App Inventor and the WineBOX kernel</h3>
+                        <p class="lead fw-normal text-light-gray mb-5 font-alt">Porting Windows 32-bit applications to Android using MIT App Inventor and the WineBOX kernel is an advanced process that allows you to run Windows applications on Android and iOS devices. This guide will walk you through the steps, from creating a new project to integrating the WineBOX kernel.</p>
+                        <h4 class="text-white font-alt">Prerequisites:</h4>
+                        <ul class="text-light-gray mb-5 font-alt">
+                            <li>Basic knowledge of MIT App Inventor.</li>
+                            <li>Familiarity with Android app development.</li>
+                            <li>Access to the WineBOX kernel.</li>
+                            <li>The Windows 32-bit application you want to port (in .zip format).</li>
+                        </ul>
+                        <ul class="list-unstyled text-white">
+                            <li class="mb-3">
+                                <h4 class="font-alt">Step 1: Create a New Project in MIT App Inventor</h4>
+                                <p>Go to MIT App Inventor and log in with your account. On the main screen, select "Projects" from the top menu and click "Start New Project". Name your project (e.g., "WindowsPortApp") and click "OK".</p>
+                            </li>
+                            <li class="mb-3">
+                                <h4 class="font-alt">Step 2: Configure the User Interface</h4>
+                                <p>In the "Designer" section, select and drag a "Layout" component to your screen, such as "HorizontalArrangement" to organize elements. Add other necessary components to your app, such as buttons or labels, as per your design.</p>
+                            </li>
+                            <li class="mb-3">
+                                <h4 class="font-alt">Step 3: Include a Web Viewer</h4>
+                                <p>In the component palette, go to "User Interface" and select "WebViewer". Drag the "WebViewer" component to your design screen. In the "WebViewer" properties, make sure to disable the "Zoom Enabled" option so the page displays without zoom. In the "Home URL" property, enter the following address: https://ifilex.github.io/Freedows8Bit/accesories/wine.html?app=archivozipsinlaextensionzip&p=archivo.EXE</p>
+                            </li>
+                            <li class="mb-3">
+                                <h4 class="font-alt">Step 4: Integrate the WineBOX Kernel</h4>
+                                <p>To integrate the WineBOX kernel, first upload the .zip file containing your Windows 32-bit application to the project. Do this by selecting "Media" on the right panel and then "Upload File". Upload your .zip file, but remember not to include the .zip extension in the "WebViewer" URL. For example, if your file is named myapp.zip, the URL you should use would be: https://ifilex.github.io/Freedows8Bit/accesories/wine.html?app=myapp&p=myapp.exe. Be sure to include the full name of the executable file (including the .exe extension) in the URL.</p>
+                            </li>
+                            <li class="mb-3">
+                                <h4 class="font-alt">Step 5: Final Adjustments and Reminder</h4>
+                                <p>This method only supports Windows 32-bit applications. Ensure that the application you upload meets this requirement. Once everything is set up, save your project and test it on an Android or iOS device.</p>
+                            </li>
+                            <li class="mb-3">
+                                <h4 class="font-alt">Step 6: Testing and Distribution</h4>
+                                <p>Test the application on different devices to ensure it runs correctly. Once everything is working, package your app and distribute it as needed.</p>
+                            </li>
+                        </ul>
+                        <h4 class="text-white font-alt">Conclusion:</h4>
+                        <p class="lead fw-normal text-light-gray mb-5 font-alt">Porting Windows 32-bit applications to Android and iOS using MIT App Inventor and the WineBOX kernel via a web browser is a process that requires precision. Follow these steps carefully and make sure to test your application on multiple devices to ensure compatibility.</p>
+                        <div class="text-center mb-5">
+                            <a href="support.html" class="btn btn-lg font-alt" style="color: white; background-color: #43b3f9">Need Help? Check Our Support Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action section-->
+        <section class="cta">
+            <video autoplay muted loop id="background-video">
+                <source src="https://videos.pexels.com/video-files/5495781/5495781-uhd_2560_1080_30fps.mp4" type="video/mp4">
+            </video>
+            <div class="cta-content">
+                <div class="container px-5">
+                    <h2 class="text-white display-1 lh-1 mb-4">
+                        Stop waiting.
+                        <br />
+                        Start building.
+                    </h2>
+                    <a class="btn btn-outline-light py-3 px-4 rounded-pill" style="margin-right: 20px;" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
+                    <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
+                    <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                </div>
+            </div>
+        </section>
+        <!-- App badge section-->
+        <!-- <section class="bg-gradient-primary-to-secondary2" id="download">
+            <div class="container px-5">
+                <h2 class="text-center text-white font-alt mb-4">Get the app now!</h2>
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                    <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
+                    <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                </div>
+            </div>
+        </section> -->
+        <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white small">
+                    <div class="mb-2 font-alt">&copy; Exe2Apk App 2024. All Rights Reserved.</div>
+                    <a href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Feedback Modal-->
+        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
+                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body border-0 p-4">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+    </body>
+</html>
