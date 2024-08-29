@@ -11319,6 +11319,9 @@ footer a:hover, footer a:active, footer a:focus {
       width: 100%;
       max-width: none;
   }
+  .comparison-logo {
+    max-width: 80px;
+  }
 }
 
 .comparison-table {
@@ -11344,5 +11347,9 @@ footer a:hover, footer a:active, footer a:focus {
   }
   .image-2 {
       display: block !important;
+  }
+  .table {
+    width: 50%;
+    /* min-width: 600px; */
   }
 }
