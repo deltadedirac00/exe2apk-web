@@ -494,7 +494,7 @@ progress {
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -527,12 +527,12 @@ progress {
 
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
-  font-weight: 300;
+  font-weight: 700;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-4 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -596,6 +596,17 @@ progress {
 }
 .blockquote-footer::before {
   content: "— ";
+}
+
+.pricing-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 26px;
+    gap: 26px;
+    max-inline-size: 790px;
+    margin: auto;
+    margin-block-start: 26px;
 }
 
 .img-fluid {
@@ -11184,4 +11195,145 @@ footer a:hover, footer a:active, footer a:focus {
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 17rem;
   }
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+.show-box img, .wow .img-fluid {
+  /* -webkit-animation: mover 2s infinite alternate; */
+  animation: mover 2s infinite alternate;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-logo {
+  max-width: 130px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+.footer h5 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer .list-inline-item {
+  margin-right: 10px;
+}
+
+.footer .list-inline-item a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer .list-inline-item a:hover {
+  color: #ddd;
+}
+
+.footer .text-center {
+  text-align: center;
+}
+
+/* planes.css */
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plan {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.plan h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.plan .price {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.plan ul li {
+  margin-bottom: 10px;
+}
+
+.plan button {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .plan {
+      width: 100%;
+      max-width: none;
+  }
+}
+
+.comparison-table {
+  margin-top: 50px;
+}
+
+.comparison-logo {
+  max-width: 80px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 600px;
 }

@@ -9,6 +9,7 @@
         <link rel="icon" type="image/x-icon" href="img/logo-eta.png" />
         <!-- Bootstrap icons-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- Google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
@@ -16,6 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/planes.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -32,14 +34,14 @@
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#pricing">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#">Download</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="instructions.html">Instructions</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="faq.html">FAQ</a></li>
                     </ul>
                     <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
                             <i class="bi-chat-text-fill me-2"></i>
-                            <span class="small">Send Feedback</span>
+                            <span class="small">Contact Us</span>
                         </span>
                     </button>
                 </div>
@@ -55,7 +57,7 @@
                             <h1 class="display-1 lh-1 mb-3 font-alt">Convert Your Windows Apps to Android Instantly</h1>
                             <p class="lead fw-normal text-muted mb-5">EXE2APK makes it easy to bring your favorite Windows software and games to mobile. No coding required!</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
+                                <a class="me-lg-3 mb-4 mb-lg-0" href="https://play.google.com"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
                                 <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
                             </div>
                         </div>
@@ -151,9 +153,9 @@
                     <div class="col-lg-4 order-lg-0">
                         <!-- Features section device mockup-->
                         <div class="features-device-mockup">
-                            <div>
+                            <div class="show-box" style="color:#fff;">
                                 <img src="img/pantallas-transparente1.png" alt="" class="pantallas-adapted-movil">
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -204,82 +206,150 @@
                 </div>
             </div>
         </section>
+        
         <!-- Basic features section-->
         <section class="bg-light" id="pricing">
+            <div class="video-background">
+                <video autoplay muted loop id="bg-video">
+                    <source src="img/plan-video.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-12 text-center mb-4">
-                        <h2 class="display-4 lh-1 font-alt">Pricing</h2>
-                    </div>
-                    <div class="col-12">
-                        <div class="row justify-content-center">
-                            <!-- User Plan (Free Version) -->
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-alt">User Plan (Free Version)</h5>
-                                        <h6 class="card-price font-alt">Free</h6>
-                                        <hr>
-                                        <ul class="fa-ul">
-                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Supports 32-bit applications.</li>
-                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Online version only.</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary">Get Free Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Popular Plan (Paid Version) -->
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-alt">Popular Plan (Paid Version)</h5>
-                                        <h6 class="card-price font-alt">$2.99<span class="period">/month</span> or $1.99<span class="period">/month (annual)</span></h6>
-                                        <hr>
-                                        <ul class="fa-ul">
-                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Supports 32 and 64-bit applications.</li>
-                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Faster performance and speed.</li>
-                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Compatible with iOS, Android, macOS, Xbox Series X/S, and Windows.</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-success">Get Popular Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Business Plan -->
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-alt">Business Plan</h5>
-                                        <h6 class="card-price font-alt">$329.9<span class="period">/month</span> or $219.9<span class="period">/month (annual)</span></h6>
-                                        <hr>
-                                        <ul class="fa-ul">
-                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Enterprise-level support.</li>
-                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Advanced security.</li>
-                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Compatible with the latest generation of games and platforms.</li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary">Get Business Plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h2 class="display-4 lh-1 font-alt pricing-price">The best work solution, for the best price.</h2>
                     </div>
                 </div>
             </div>
         </section>
 
+        <div class="toggle-container">
+            <button id="yearly" class="toggle-button">Yearly</button>
+            <button id="monthly" class="toggle-button active">Monthly</button>
+        </div>
+
+        <div class="pricing-table">
+            <div class="plan free">
+                <h2 class="font-alt">Free Forever</h2>
+                <p class="price">
+                    <strong>FREE</strong>
+                </p>
+                <button class="btn text-white" onclick="window.open('https://ifilex.github.io/Freedows8Bit/', '_blank')">Free forever</button>
+                <ul>
+                    <li>Supports 32-bit applications.</li>
+                    <li>Online version only.</li>
+                    <li>Principal ofimatic tools.</li>
+                    <li>24/7 chat support wihtout priority.</li>
+                </ul>
+            </div>
+            
+            <div class="plan unlimited">
+                <h2 class="font-alt">Popular</h2>
+                <p class="price">
+                    <strong>$<span class="monthly-price">2,99</span>/<span class="price-period">month</span></strong>
+                    <span class="discount" style="display: none;">33% OFF</span>
+                </p>
+                <button class="btn text-white" onclick="window.open('https://play.google.com', '_blank')">Get Started</button>
+                <ul>
+                    <li>Everything in Free Forever.</li>
+                    <li>Supports 32 and 64-bit applications.</li>
+                    <li>Faster performance and speed.</li>
+                    <li>Compatible with iOS, Android, macOS, Xbox Series X/S, and Windows.</li>
+                </ul>
+            </div>
+            
+            <div class="plan business">
+                <h2 class="font-alt">Business</h2>
+                <p class="price">
+                    <strong>$<span class="monthly-price">329,99</span>/<span class="price-period">month</span></strong>
+                    <span class="discount" style="display: none;">33% OFF</span>
+                </p>
+                <button class="btn text-white" onclick="window.open('https://play.google.com', '_blank')">Get Started</button>
+                <ul>
+                    <li>Everything in Unlimited.</li>
+                    <li>Enterprise-level support.</li>
+                    <li>Customizable features.</li>
+                    <li>Priority chat support.</li>
+                </ul>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="alert alert-primary text-center mb-4">
+                        <h5 class="font-alt">Save 4 months with annual payment!</h5>
+                        <p>By choosing the annual payment option, you save the equivalent of 4 months of subscription fees.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div style="width: 100%; margin-bottom: 50px;">
+                    <div class="comparison-table">
+                        <h2 class="display-4 lh-1 font-alt pricing-price" style="text-align: center; margin-bottom: 30px;">Comparison Table</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th><img src="img/xbox-cloud.png" alt="Xbox Cloud" class="comparison-logo"></th>
+                                        <th><img src="img/nvidia-cloud.png" alt="Nvidia" class="comparison-logo"></th>
+                                        <th><img src="img/logo-eta.png" alt="Exe2Apk" class="comparison-logo"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Monthly Cost</td>
+                                        <td>$19.99</td>
+                                        <td>$21.99</td>
+                                        <td>$2.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Latency</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Queues</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>High-Speed Connection Required</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Access to All Games</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                        <td>Yes (10% of cost)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---->
+
         <!-- Call to action section-->
-        <section class="cta">
+        <section class="cta" id="download">
             <video autoplay muted loop id="background-video">
                 <source src="https://videos.pexels.com/video-files/5495781/5495781-uhd_2560_1080_30fps.mp4" type="video/mp4">
             </video>
             <div class="cta-content">
                 <div class="container px-5">
-                    <h2 class="text-white display-1 lh-1 mb-4">
+                    <h2 class="text-white display-1 lh-1 mb-4 font-alt">
                         Stop waiting.
                         <br />
                         Start building.
                     </h2>
-                    <a class="btn btn-outline-light py-3 px-4 rounded-pill" style="margin-right: 20px;" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
-                    <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
+                    <!-- <a class="btn btn-outline-light py-3 px-4 rounded-pill" style="margin-right: 20px;" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a> -->
+                    <a class="me-lg-3 mb-4 mb-lg-0" href="https://play.google.com"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
                     <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
                 </div>
             </div>
@@ -294,17 +364,59 @@
                 </div>
             </div>
         </section> -->
-        
+
         <!-- Footer-->
-        <footer class="bg-black text-center py-5">
-            <div class="container px-5">
-                <div class="text-white small">
-                    <div class="mb-2 font-alt">&copy; Exe2Apk App 2024. All Rights Reserved.</div>
-                    <a href="#!">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a href="faq.html">FAQ</a>
+        
+        <footer class="footer bg-black text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <img src="img/logo-eta.png" alt="Exe2Apk Logo" class="footer-logo mb-3">
+                        <p>Exe2Apk is a tool that allows you to port Windows applications to Android, iOS, MacOS, Xbox Series, and even Windows devices.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="font-alt">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-white">Privacy</a></li>
+                            <li><a href="#!" class="text-white">Terms</a></li>
+                            <li><a href="faq.html" class="text-white">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <h5 class="font-alt">Follow Us</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://t.me/exe2apk" class="text-white">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://x.com/Exe2Apk" class="text-white">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/UCrf0IxQZ5QU0IcSlERBPKqQ" class="text-white">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://tiktok.com/@yourtiktok" class="text-white">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="mailto: exe2apk@gmail.com" class="text-white">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 Exe2Apk App. All Rights Reserved.</p>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -313,62 +425,45 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
+                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Contact Us</h5>
                         <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body border-0 p-4">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm" action="https://formspree.io/f/mqazndrq" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
                                 <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <div class="invalid-feedback">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
                                 <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <div class="invalid-feedback">An email is required.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" required />
                                 <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <div class="invalid-feedback">A phone number is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
                                 <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <div class="invalid-feedback">A message is required.</div>
                             </div>
                             <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
                             <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg" id="submitButton" type="submit">Submit</button></div>
                         </form>
                     </div>
                 </div>
@@ -378,6 +473,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/planes.js"></script>
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
     </body>
 </html>

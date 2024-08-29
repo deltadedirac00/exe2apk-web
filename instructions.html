@@ -9,6 +9,7 @@
         <link rel="icon" type="image/x-icon" href="img/logo-eta.png" />
         <!-- Bootstrap icons-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- Google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
@@ -32,14 +33,14 @@
                         <li class="nav-item"><a class="nav-link me-lg-3" href="./index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="./index.html#features">Features</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="./index.html#pricing">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="./index.html">Download</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="./index.html#download">Download</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="instructions.html">Instructions</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="faq.html">FAQ</a></li>
                     </ul>
                     <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
                             <i class="bi-chat-text-fill me-2"></i>
-                            <span class="small">Send Feedback</span>
+                            <span class="small">Contact Us</span>
                         </span>
                     </button>
                 </div>
@@ -51,9 +52,12 @@
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-12">
-                        <h2 class="display-4 lh-1 text-white font-alt">Instructions</h2>
-                        <h3 class="text-white mb-5 font-alt">Porting Windows 32-bit applications to Android using MIT App Inventor and the WineBOX kernel</h3>
+                        <h2 class="display-4 lh-1 text-white font-alt" style="text-align: center; margin-bottom: 0.9rem;">Instructions</h2>
+                        <h3 class="text-white font-alt">Porting Windows 32-bit applications to Android using MIT App Inventor and the WineBOX kernel</h3>
                         <p class="lead fw-normal text-light-gray mb-5 font-alt">Porting Windows 32-bit applications to Android using MIT App Inventor and the WineBOX kernel is an advanced process that allows you to run Windows applications on Android and iOS devices. This guide will walk you through the steps, from creating a new project to integrating the WineBOX kernel.</p>
+                        <div style="text-align: center;">
+                            <img class="img-fluid rounded mb-5" style="width: 70%;" src="img/exetoapk.png" alt="exetoapk" />
+                        </div>
                         <h4 class="text-white font-alt">Prerequisites:</h4>
                         <ul class="text-light-gray mb-5 font-alt">
                             <li>Basic knowledge of MIT App Inventor.</li>
@@ -90,7 +94,7 @@
                         <h4 class="text-white font-alt">Conclusion:</h4>
                         <p class="lead fw-normal text-light-gray mb-5 font-alt">Porting Windows 32-bit applications to Android and iOS using MIT App Inventor and the WineBOX kernel via a web browser is a process that requires precision. Follow these steps carefully and make sure to test your application on multiple devices to ensure compatibility.</p>
                         <div class="text-center mb-5">
-                            <a href="support.html" class="btn btn-lg font-alt" style="color: white; background-color: #43b3f9">Need Help? Check Our Support Page</a>
+                            <a href="faq.html" class="btn btn-lg font-alt" style="color: white; background-color: #43b3f9">Need Help? Check Our Faq Page</a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +108,7 @@
             </video>
             <div class="cta-content">
                 <div class="container px-5">
-                    <h2 class="text-white display-1 lh-1 mb-4">
+                    <h2 class="text-white display-1 lh-1 mb-4 font-alt">
                         Stop waiting.
                         <br />
                         Start building.
@@ -126,15 +130,56 @@
             </div>
         </section> -->
         <!-- Footer-->
-        <footer class="bg-black text-center py-5">
-            <div class="container px-5">
-                <div class="text-white small">
-                    <div class="mb-2 font-alt">&copy; Exe2Apk App 2024. All Rights Reserved.</div>
-                    <a href="#!">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a href="faq.html">FAQ</a>
+        <footer class="footer bg-black text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <img src="img/logo-eta.png" alt="Exe2Apk Logo" class="footer-logo mb-3">
+                        <p>Exe2Apk is a tool that allows you to port Windows applications to Android, iOS, MacOS, Xbox Series, and even Windows devices.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="font-alt">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#!" class="text-white">Privacy</a></li>
+                            <li><a href="#!" class="text-white">Terms</a></li>
+                            <li><a href="faq.html" class="text-white">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <h5 class="font-alt">Follow Us</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://t.me/exe2apk" class="text-white">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://x.com/Exe2Apk" class="text-white">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/UCrf0IxQZ5QU0IcSlERBPKqQ" class="text-white">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://tiktok.com/@yourtiktok" class="text-white">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="mailto: exe2apk@gmail.com" class="text-white">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2024 Exe2Apk App. All Rights Reserved.</p>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -143,62 +188,45 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Send feedback</h5>
+                        <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Contact Us</h5>
                         <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body border-0 p-4">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm" action="https://formspree.io/f/mqazndrq" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
                                 <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <div class="invalid-feedback">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
                                 <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <div class="invalid-feedback">An email is required.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" required />
                                 <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <div class="invalid-feedback">A phone number is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
                                 <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <div class="invalid-feedback">A message is required.</div>
                             </div>
                             <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
                             <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                            <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg" id="submitButton" type="submit">Submit</button></div>
                         </form>
                     </div>
                 </div>
