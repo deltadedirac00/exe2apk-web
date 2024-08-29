@@ -11337,3 +11337,12 @@ footer a:hover, footer a:active, footer a:focus {
   width: 100%;
   min-width: 600px;
 }
+
+@media (max-width: 768px) {
+  .image-1 {
+      display: none !important;
+  }
+  .image-2 {
+      display: block !important;
+  }
+}
