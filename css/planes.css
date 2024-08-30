@@ -163,7 +163,7 @@
 
 @media (max-width: 480px) {
     .toggle-container {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 10px;
     }
 
