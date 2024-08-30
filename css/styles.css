@@ -1972,6 +1972,15 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 }
+
+.my-table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
 .form-label {
   margin-bottom: 0.5rem;
 }
@@ -11203,6 +11212,11 @@ footer a:hover, footer a:active, footer a:focus {
 .show-box img, .wow .img-fluid {
   /* -webkit-animation: mover 2s infinite alternate; */
   animation: mover 2s infinite alternate;
+}
+
+.mycol-12 {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .footer {
