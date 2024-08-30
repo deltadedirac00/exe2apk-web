@@ -167,7 +167,12 @@
         gap: 10px;
     }
 
-    button {
+    .button-y {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .button-m {
         width: 100%;
         margin-bottom: 10px;
     }

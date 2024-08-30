@@ -11348,8 +11348,15 @@ footer a:hover, footer a:active, footer a:focus {
   .image-2 {
       display: block !important;
   }
-  .table {
-    width: 50%;
-    /* min-width: 600px; */
+}
+
+/* styles.css */
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
   }
+
 }
