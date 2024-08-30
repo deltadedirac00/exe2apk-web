@@ -1981,6 +1981,13 @@ progress {
   margin-bottom: 40px;
 }
 
+/* Estilos para enlaces largos */
+.responsive-link {
+  word-wrap: break-word; /* Permite que las palabras largas se dividan y ajusten al contenedor */
+  overflow-wrap: break-word; /* Permite que las palabras largas se dividan y ajusten al contenedor */
+  white-space: normal; /* Permite que el texto se ajuste al contenedor */
+}
+
 .form-label {
   margin-bottom: 0.5rem;
 }
