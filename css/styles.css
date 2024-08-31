@@ -11165,6 +11165,9 @@ footer a:hover, footer a:active, footer a:focus {
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 12.5rem;
   }
+  .masthead {
+    padding-top: 9rem;
+  }
 }
 .pantallas-adapted-movil {
   width: 500px;
