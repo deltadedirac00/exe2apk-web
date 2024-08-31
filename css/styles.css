@@ -1973,6 +1973,12 @@ progress {
   }
 }
 
+@media (max-width: 576px) {
+  .mobile-g-p {
+    margin-bottom: 10px;
+  }
+}
+
 .my-table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
