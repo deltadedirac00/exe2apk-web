@@ -10941,6 +10941,18 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.good-board{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-alert-primary{
+  --bs-alert-color: #192190;
+  --bs-alert-bg: #d4d7fc;
+  --bs-alert-border-color: #bfc3fb;
+}
+
 .app-badge {
   height: 3rem;
 }
